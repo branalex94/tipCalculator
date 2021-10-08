@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Splitter</h1>
+    </header>
+    <main class="wrapper">
+      <section class="billTop">
+        <label for="billAmount" class="sectionHeader">Bill</label>
+        <img
+          src="/images/icon-dollar.svg"
+          alt="dollar icon"
+          class="inputIcon"
+        />
+        <input type="number" id="billAmount" class="billInputs" />
+      </section>
+      <section class="billMid">
+        <label for="selectTip" class="sectionHeader">Select Tip %</label>
+        <div class="optionsWrapper">
+          <article class="tipOption">5%</article>
+          <article class="tipOption">10%</article>
+          <article class="tipOption">15%</article>
+          <article class="tipOption">20%</article>
+          <article class="tipOption">25%</article>
+          <article class="tipOption customTip">Custom</article>
+        </div>
+      </section>
+      <section class="billPeople">
+        <label for="peopleAmount" class="sectionHeader">Number of People</label>
+        <img
+          src="/images/icon-person.svg"
+          alt="person icon"
+          class="inputIcon"
+        />
+        <input type="number" id="peopleAmount" class="billInputs" />
+      </section>
+      <section class="billBottom">
+        <article class="bottomContainer">
+          <div class="leftSide">
+            <h3>Tip Amount</h3>
+            <h4>/ person</h4>
+          </div>
+          <div class="rightSide">
+            <img
+              src="/images/icon-dollar.svg"
+              alt="dollar icon"
+              class="bottomIcon"
+            />
+            <h3 class="billValues" id="tipPerPerson">0</h3>
+          </div>
+        </article>
+        <article class="bottomContainer">
+          <div class="leftSide">
+            <h3>Total</h3>
+            <h4>/ person</h4>
+          </div>
+          <div class="rightSide">
+            <img
+              src="/images/icon-dollar.svg"
+              alt="dollar icon"
+              class="bottomIcon"
+            />
+            <h3 class="billValues" id="totalPerPerson">0</h3>
+          </div>
+        </article>
+        <button class="resetBtn" type="button">Reset</button>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/branalex94/">Brandon Aray</a>.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

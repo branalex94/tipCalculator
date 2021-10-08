@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+.header {
+  color: hsl(186, 14%, 43%);
+  flex: 0 0 15%;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  background: #fff;
+  flex: 1 1 85%;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sectionHeader {
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+}
+
+.wrapper section label {
+  display: block;
+}
+
+.billTop,
+.billMid,
+.billPeople,
+.billBottom {
+  padding: 15px;
+}
+
+.billInputs {
+  padding: 10px;
+  margin: 5px 0;
+  width: 80%;
+  background: hsl(189, 41%, 97%);
+  border: none;
+  height: 1.5rem;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+}
+
+.billInputs:focus {
+  outline: none;
+}
+
+.billTop {
+  flex: 0 0 10%;
+  position: relative;
+}
+
+.inputIcon {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  object-fit: contain;
+  height: 22px;
+  width: 22px;
+}
+
+.billMid {
+  flex: 1 1 45%;
+}
+
+.optionsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+}
+
+.tipOption {
+  flex: 0 0 30%;
+  background: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.tipOptionActive {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(186, 14%, 43%);
+}
+
+.customTip {
+  background: hsl(189, 41%, 97%);
+  color: hsl(186, 14%, 43%);
+}
+
+.billPeople {
+  flex: 0 0 10%;
+  position: relative;
+}
+
+.billBottom {
+  flex: 1 1 35%;
+  background: hsl(183, 100%, 15%);
+  margin: 0 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.bottomContainer {
+  display: flex;
+  margin: 15px auto;
+}
+
+.leftSide {
+  flex: 1 1 80%;
+}
+
+.leftSide h3 {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.leftSide h4 {
+  font-size: 0.7rem;
+}
+
+.leftSide h4,
+.rightSide h4 {
+  color: #999;
+}
+
+.billValues {
+  color: hsl(172, 67%, 45%);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.rightSide {
+  flex: 0 0 20%;
+  position: relative;
+}
+
+.bottomIcon {
+  position: absolute;
+  object-fit: contain;
+  height: 26px;
+  width: 26px;
+  top: 5px;
+  left: -30px;
+}
+
+.resetBtn {
+  display: block;
+  width: 70%;
+  height: 2.5rem;
+  margin: 0 auto 10px;
+  background: hsl(172, 67%, 45%);
+  border: none;
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  letter-spacing: -1px;
+}
